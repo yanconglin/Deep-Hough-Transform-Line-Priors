@@ -1,5 +1,6 @@
 # Deep-Hough-Transform-Line-Priors
-Official implementation for Deep-Hough-Transform-Line-Priors (ECCV 2020)
+Official implementation for Deep-Hough-Transform-Line-Priors (ECCV 2020) 
+https://arxiv.org/abs/2007.09493
 
 Yancong Lin, and Silvia Laura Pintea, and Jan C. van Gemert
 
