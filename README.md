@@ -17,5 +17,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
 ## Main results: Adding Global Hough Transform Line Priors improves both data and parameter efficiency
 
-
+ <img src="ht-lcnn/figs/exp_gt.pdf" width="180">      |    <img src="ht-lcnn/figs/exp_input.pdf" width="180">    |    <img src="ht-lcnn/figs/exp_iht.pdf" width="180">      |    <img src="ht-lcnn/figs/exp_pred.pdf" width="180"> 
+ 
+ 
 ## HT-IHT Module
