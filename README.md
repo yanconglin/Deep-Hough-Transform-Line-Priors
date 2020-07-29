@@ -5,11 +5,9 @@ https://arxiv.org/abs/2007.09493
 
 Yancong Lin, and Silvia Laura Pintea, and Jan C. van Gemert
 
-e-mail: y.lin-1ATtudelftDOTnl
+E-mail: y.lin-1ATtudelftDOTnl
 
-Computer Vision Lab
-
-Delft University of Technology, the Netherlands
+Vision Lab, Delft University of Technology, the Netherlands
 
 ## Introduction
 
@@ -19,12 +17,12 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
  <img src="ht-lcnn/figs/exp_gt.png" width="180">   <img src="ht-lcnn/figs/exp_input.png" width="180">   <img src="ht-lcnn/figs/exp_iht.png" width="180">   <img src="ht-lcnn/figs/exp_pred.png" width="180"> 
  
- From left to right:  Ground Truth, Input features, HTIHT output and Prediction 
+ From left to right:  Ground Truth, Input features, HTIHT features and Predictions.
  
 ## Main contribution: HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="480"> 
  
- The proposed HT-IHT module in our paper
+ AN overview of the proposed HT-IHT module.
  
  
  ## Main result: imptroved data and parameter efficiency
@@ -73,7 +71,6 @@ eval-sAP.py                     # script for sAP evaluation
 eval-APH.py                     # script for APH evaluation
 eval-mAPJ.py                    # script for mAPJ evaluation
 train.py                        # script for training the neural network
-post.py                         # script for post-processing
 process.py                      # script for processing a dataset from a checkpoint
 ```
 
@@ -106,10 +103,11 @@ python ./demo.py -d 0 config/wireframe.yaml <path-to-pretrained-pth> <path-to-im
 ```
 Here, `-d 0` is specifying the GPU ID used for evaluation, and you can specify `-d ""` to force CPU inference.
 
-#### Processing the Dataset
+### Processing the Dataset
+
+download the dataset into the folder "data", from [WF-Parser](https://github.com/huangkuns/wireframe)
 
 ```bash
-download the dataset into the folder "data", from https://github.com/huangkuns/wireframe 
 cd data
 tar xf wireframe_raw.tar.xz
 rm wireframe_raw.tar.xz
@@ -117,7 +115,7 @@ cd ..
 dataset/wireframe.py data/wireframe_raw data/wireframe
 ```
 
-** Recommended** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn#downloading-the-processed-dataset).
+** Recommended** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn#downloading-the-processed-dataset). Details are as follows:
 
 Make sure `curl` is installed on your system and execute
 ```bash
@@ -136,7 +134,7 @@ To train the neural network on GPU 0 (specified by `-d 0`) with the default para
 python ./train.py -d 0 --identifier baseline config/wireframe.yaml
 ```
 
-## Testing Pretrained Models
+### Testing Pretrained Models
 To generate wireframes on the validation dataset with the pretrained model, execute
 
 ```bash
