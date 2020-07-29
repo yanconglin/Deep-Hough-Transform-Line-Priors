@@ -1,18 +1,19 @@
 io:
+  vote_index: vote_index_128_128_3_1.mat
   logdir: logs/
   datadir: data/wireframe/
-  vote_index: vote_index_128_128_3_1.mat
-  resume_from:
+  outdir: results/
+  resume_from: 
   num_workers: 4
   tensorboard_port: 0
-  validation_interval: 24000
+  validation_interval: 20000
 
 model:
   image:
       mean: [109.730, 103.832, 98.681]
       stddev: [22.275, 22.124, 23.229]
 
-  batch_size: 6
+  batch_size: 5
   batch_size_eval: 2
 
   # backbone multi-task parameters
@@ -24,10 +25,10 @@ model:
     lpos: 1
     lneg: 1
 
-  # backbone parameters
+  # backbone parameters, num parameters of a HT-IHT block ~= 0.5 * # of a Hourglass module
   backbone: stacked_hourglass
   depth: 4
-  num_stacks: 2
+  num_stacks: 4
   num_blocks: 1
 
   # sampler parameters
