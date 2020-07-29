@@ -14,12 +14,14 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
 ## Main Features: added Hough line priors
 
- <img src="ht-lcnn/figs/exp_gt.png" width="180">   <img src="ht-lcnn/figs/exp_input.png" width="180">   <img src="ht-lcnn/figs/exp_iht.png" width="180">   <img src="ht-lcnn/figs/exp_pred.png" width="180"> 
+ <img src="ht-lcnn/figs/exp_gt.png" width="180">   <img src="ht-lcnn/figs/exp_pred.png" width="180">  
  
- From left to right:  Ground Truth, Input features with noise, lHTIHT features and Predictions.
+ <img src="ht-lcnn/figs/exp_input.png" width="180">   <img src="ht-lcnn/figs/exp_iht.png" width="180"> 
+  
+ From left to right:  Ground Truth, Predictions, Input features with noise, and HTIHT features. The added line prior is able to localize line cadidates from the noisy input.
  
 ## Main Contribution: the HT-IHT Module
- <img src="ht-lcnn/figs/htiht.png" width="480"> 
+ <img src="ht-lcnn/figs/htiht.png" width="600"> 
  
  An overview of the proposed HT-IHT module.
  
