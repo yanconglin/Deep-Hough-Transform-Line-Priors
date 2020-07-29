@@ -1,7 +1,6 @@
 # Hold on, I am editing right now...
 # Deep-Hough-Transform-Line-Priors 
-Official implementation for Deep-Hough-Transform-Line-Priors (ECCV 2020) 
-https://arxiv.org/abs/2007.09493
+Official implementation for [Deep-Hough-Transform-Line-Priors (ECCV 2020)] (https://arxiv.org/abs/2007.09493)
 
 Yancong Lin, and Silvia Laura Pintea, and Jan C. van Gemert
 
@@ -17,7 +16,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
  <img src="ht-lcnn/figs/exp_gt.png" width="180">   <img src="ht-lcnn/figs/exp_input.png" width="180">   <img src="ht-lcnn/figs/exp_iht.png" width="180">   <img src="ht-lcnn/figs/exp_pred.png" width="180"> 
  
- From left to right:  Ground Truth, Input features, HTIHT features and Predictions.
+ From left to right:  Ground Truth, Input features with noise,lHTIHT features and Predictions.
  
 ## Main contribution: HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="480"> 
@@ -105,13 +104,9 @@ Here, `-d 0` is specifying the GPU ID used for evaluation, and you can specify `
 
 ### Processing the Dataset
 
-download the dataset into the folder "data", from [WF-Parser](https://github.com/huangkuns/wireframe)
+download and unzip the dataset into the folder "data", from [WF-Parser](https://github.com/huangkuns/wireframe)
 
 ```bash
-cd data
-tar xf wireframe_raw.tar.xz
-rm wireframe_raw.tar.xz
-cd ..
 dataset/wireframe.py data/wireframe_raw data/wireframe
 ```
 
