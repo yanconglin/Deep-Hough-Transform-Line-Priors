@@ -1,6 +1,6 @@
 # Hold on, I am editing right now...
 # Deep-Hough-Transform-Line-Priors 
-Official implementation for [Deep-Hough-Transform-Line-Priors (ECCV 2020)] (https://arxiv.org/abs/2007.09493)
+Official implementation for Deep-Hough-Transform-Line-Priors (ECCV 2020) (https://arxiv.org/abs/2007.09493)
 
 Yancong Lin, and Silvia Laura Pintea, and Jan C. van Gemert
 
@@ -32,7 +32,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
 ## Code Structure
 
-Our implementation is based on the [LCNN](https://github.com/zhou13/lcnn) implementation [https://arxiv.org/abs/1905.03246].  (Thanks Yichao Zhou for such a nice implemtation!)
+Our implementation is largely based on [LCNN](https://github.com/zhou13/lcnn).  (Thanks Yichao Zhou for such a nice implemtation!)
 
 We made minor changes to fit our HT-IHT module. If you are only interested in the HT-IHT module, please check "ht-lcnn/lcnn/models/HT.py".
 
@@ -91,7 +91,7 @@ conda install -y pyyaml docopt matplotlib scikit-image opencv
 
 ### Pre-trained Models
 
-You can download our reference pre-trained models from [Dropbox] (to do). Use `demo.py`, `process.py`, and
+You can download our reference pre-trained models from Dropbox (to do). Use `demo.py`, `process.py`, and
 `eval-*.py` to evaluate the pre-trained models.
 
 ### Detect Wireframes for Your Own Images
@@ -104,7 +104,7 @@ Here, `-d 0` is specifying the GPU ID used for evaluation, and you can specify `
 
 ### Processing the Dataset
 
-download and unzip the dataset into the folder "data", from [WF-Parser](https://github.com/huangkuns/wireframe)
+download and unzip the dataset into the folder "data", from [Learning to Parse Wireframes in Images of Man-Made Environments](https://github.com/huangkuns/wireframe)
 
 ```bash
 dataset/wireframe.py data/wireframe_raw data/wireframe
