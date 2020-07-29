@@ -1,6 +1,6 @@
 # Hold on, I am editing right now...
 # Deep-Hough-Transform-Line-Priors 
-Official implementation for Deep-Hough-Transform-Line-Priors (ECCV 2020) (https://arxiv.org/abs/2007.09493)
+Official implementation for [Deep-Hough-Transform-Line-Priors](https://arxiv.org/abs/2007.09493) (ECCV 2020) 
 
 Yancong Lin, and Silvia Laura Pintea, and Jan C. van Gemert
 
@@ -18,7 +18,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
  
  From left to right:  Ground Truth, Input features with noise,lHTIHT features and Predictions.
  
-## Main Contribution: HT-IHT Module
+## Main Contribution: the HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="480"> 
  
  An overview of the proposed HT-IHT module.
@@ -73,7 +73,10 @@ train.py                        # script for training the neural network
 process.py                      # script for processing a dataset from a checkpoint
 ```
 
+## Remarks and Tips on the Hough Transform vote_index matrix (to do).
+Currently, my HT-IHT module runs both on CPUs and GPUs, but consumes more memory (depends on the image size). I will release the CUDA version later, which greatly reduces the memory consumption. 
 
+There has been another CUDA implemeatation for the Hough Tranform, which seems to be more computationally efficient.  Please check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
 
 ## Reproducing Results
 
