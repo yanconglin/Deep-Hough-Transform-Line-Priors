@@ -12,19 +12,19 @@ Vision Lab, Delft University of Technology, the Netherlands
 
 Classical work on line segment detection is knowledge-based; it uses carefully designed geometric priors using either image gradients, pixel groupings, or Hough transform variants. Instead, current deep learning methods do away with all prior knowledge and replace priors by training deep networks on large manually annotated datasets. Here, we reduce the dependency on labeled data by building on the classic knowledge-based priors while using deep networks to learn features. We add line priors through a trainable Hough transform block into a deep network. Hough transform provides the prior knowledge about global line parameterizations, while the convolutional layers can learn the local gradient-like line features. On the Wireframe (ShanghaiTech) and York Urban datasets we show that adding prior knowledge improves data efficiency as line priors no longer need to be learned from data. Keywords: Hough transform; global line prior, line segment detection.
 
-## Main feature: added Hough line priors
+## Main Features: added Hough line priors
 
  <img src="ht-lcnn/figs/exp_gt.png" width="180">   <img src="ht-lcnn/figs/exp_input.png" width="180">   <img src="ht-lcnn/figs/exp_iht.png" width="180">   <img src="ht-lcnn/figs/exp_pred.png" width="180"> 
  
  From left to right:  Ground Truth, Input features with noise,lHTIHT features and Predictions.
  
-## Main contribution: HT-IHT Module
+## Main Contribution: HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="480"> 
  
  An overview of the proposed HT-IHT module.
  
  
- ## Main result: imptroved data and parameter efficiency
+ ## Main Result: imptroved data and parameter efficiency
   <img src="ht-lcnn/figs/sap10.png" width="240">   <img src="ht-lcnn/figs/sap10_pr.png" width="240"> 
   
   <img src="ht-lcnn/figs/sap10_2.png" width="240">   <img src="ht-lcnn/figs/sap10_pr2.png" width="240"> 
@@ -154,14 +154,11 @@ To evaluate Precision-Recall, please check the [MCMLSD](https://www.elderlab.yor
 ### Citing End-to-End Wireframe Parsing
 
 If you find Deep Hough-Transform Line Priors useful in your research, please consider citing:
-
+```bash
 @article{lin2020deep,
-
   title={Deep Hough-Transform Line Priors},
-  
   author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
-  
   booktitle={EECV 2020},
-  
   year={2020}
 }
+```
