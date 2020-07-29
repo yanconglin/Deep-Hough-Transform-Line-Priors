@@ -1,4 +1,5 @@
-# Deep-Hough-Transform-Line-Priors
+# Hold on, I am editing right now...
+# Deep-Hough-Transform-Line-Priors 
 Official implementation for Deep-Hough-Transform-Line-Priors (ECCV 2020) 
 https://arxiv.org/abs/2007.09493
 
