@@ -22,7 +22,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 ## Main contribution: HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="480"> 
  
- AN overview of the proposed HT-IHT module.
+ An overview of the proposed HT-IHT module.
  
  
  ## Main result: imptroved data and parameter efficiency
@@ -158,11 +158,15 @@ To evaluate Precision-Recall, please check the [MCMLSD](https://www.elderlab.yor
 
 ### Citing End-to-End Wireframe Parsing
 
-If you find L-CNN useful in your research, please consider citing:
+If you find Deep Hough-Transform Line Priors useful in your research, please consider citing:
 
 @article{lin2020deep,
+
   title={Deep Hough-Transform Line Priors},
+  
   author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
+  
   booktitle={EECV 2020},
+  
   year={2020}
 }
