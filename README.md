@@ -106,7 +106,7 @@ Here, `-d 0` is specifying the GPU ID used for evaluation, and you can specify `
 #### Processing the Dataset
 
 ```bash
-download the dataset into folder "data", from https://github.com/huangkuns/wireframe 
+download the dataset into the folder "data", from https://github.com/huangkuns/wireframe 
 cd data
 tar xf wireframe_raw.tar.xz
 rm wireframe_raw.tar.xz
@@ -114,7 +114,17 @@ cd ..
 dataset/wireframe.py data/wireframe_raw data/wireframe
 ```
 
-** Note** If you wish to directly download the pre-processed dataset from [LCNN](https://github.com/zhou13/lcnn), please check: https://github.com/zhou13/lcnn
+** Recommended** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn).
+
+Make sure `curl` is installed on your system and execute
+```bash
+cd data
+../misc/gdrive-download.sh 1T4_6Nb5r4yAXre3lf-zpmp3RbmyP1t9q wireframe.tar.xz
+tar xf wireframe.tar.xz
+rm wireframe.tar.xz
+cd ..
+```
+
 ### Training
 The default batch size assumes your have a graphics card with 12GB video memory, e.g., GTX 1080Ti or RTX 2080Ti. You may reduce the batch size if you have less video memory.
 
