@@ -95,7 +95,7 @@ conda install -y pyyaml docopt matplotlib scikit-image opencv
 
 ### Pre-trained Models
 
-You can download our reference pre-trained models from Dropbox (to do). Use `demo.py`, `process.py`, and
+You can download our reference pre-trained models from [Dropbox](https://www.dropbox.com/s/nx5iu2kx2avvg0p/checkpoint.pth.tar?dl=0). Use `demo.py`, `process.py`, and
 `eval-*.py` to evaluate the pre-trained models.
 
 ### Detect Wireframes for Your Own Images
