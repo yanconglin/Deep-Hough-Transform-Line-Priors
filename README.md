@@ -1,5 +1,5 @@
-# Hold on, I am editing right now...
 # Deep-Hough-Transform-Line-Priors 
+
 Official implementation for [Deep-Hough-Transform-Line-Priors](https://arxiv.org/abs/2007.09493) (ECCV 2020) 
 
 Yancong Lin, and [Silvia Laura Pintea](https://silvialaurapintea.github.io/), and [Jan C. van Gemert](http://jvgemert.github.io/)
@@ -77,7 +77,7 @@ process.py                      # script for processing a dataset from a checkpo
 ## Remarks on the Hough Transform (to do).
 Currently, my HT-IHT module runs both on CPUs and GPUs, but consumes more memory (depends on the image size). I will release the CUDA version later, which greatly reduces the memory consumption. 
 
-There has been another CUDA implemeatation for the Hough Tranform, which seems to be more computationally efficient.  Please check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
+There has been another CUDA implemeatation for Hough Tranform. Please check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
 
 ## Reproducing Results
 
@@ -95,7 +95,7 @@ conda install -y pyyaml docopt matplotlib scikit-image opencv
 
 ### Pre-trained Models
 
-You can download our reference pre-trained models from Dropbox (to do). Use `demo.py`, `process.py`, and
+You can download our reference pre-trained models from [Dropbox](https://www.dropbox.com/sh/tdm8v8zzr0rh0f4/AABPgakVy8pA6dKEoek3c8Fea?dl=0). Use `demo.py`, `process.py`, and
 `eval-*.py` to evaluate the pre-trained models.
 
 ### Detect Wireframes for Your Own Images
