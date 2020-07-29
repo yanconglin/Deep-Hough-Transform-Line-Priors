@@ -21,7 +21,13 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
  
  From left to right:  Ground Truth, Input features, HTIHT output and Prediction 
  
-## HT-IHT Module
+## Main contribution: HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="480"> 
  
  The proposed HT-IHT module in our paper
+ 
+ 
+ ### Main result:
+  <img src="ht-lcnn/figs/sap10.png" width="360">   <img src="ht-lcnn/figs/sap10_pr.png" width="360"> 
+  
+  <img src="ht-lcnn/figs/sap10_2.png" width="360">   <img src="ht-lcnn/figs/sap10_pr2.png" width="360"> 
