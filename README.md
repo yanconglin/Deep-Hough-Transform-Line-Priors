@@ -35,7 +35,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
 ## Code Structure
 
-Our implementation is based on the LCNN implementation [https://arxiv.org/abs/1905.03246]. We made minor changes to adapt our HT-IHT. If you are only interested in the HT-IHT part, please check "ht-lcnn/lcnn/models/HT.py".
+Our implementation is based on the [LCNN](https://github.com/zhou13/lcnn) implementation [https://arxiv.org/abs/1905.03246]. We made minor changes to fit our HT-IHT module. If you are only interested in the HT-IHT module, please check "ht-lcnn/lcnn/models/HT.py". (Thanks Yichao Zhou for such a nice implemtation!)
 Below is a quick overview of the function of each file.
 
 ```bash
@@ -72,4 +72,60 @@ eval-mAPJ.py                    # script for mAPJ evaluation
 train.py                        # script for training the neural network
 post.py                         # script for post-processing
 process.py                      # script for processing a dataset from a checkpoint
+```
+
+
+
+## Reproducing Results
+
+### Installation
+
+For the ease of reproducibility, you are suggested to install [miniconda](https://docs.conda.io/en/latest/miniconda.html) (or [anaconda](https://www.anaconda.com/distribution/) if you prefer) before following executing the following commands. 
+
+```bash
+conda create -y -n ht
+source activate ht
+conda install -y pytorch cudatoolkit=10.1 -c pytorch
+conda install -y tensorboardx -c conda-forge
+conda install -y pyyaml docopt matplotlib scikit-image opencv
+```
+
+### Pre-trained Models
+
+You can download our reference pre-trained models from [Dropbox] (to do). Use `demo.py`, `process.py`, and
+`eval-*.py` to evaluate the pre-trained models.
+
+### Detect Wireframes for Your Own Images
+To test on your own images, you need download the pre-trained models and execute
+
+```Bash
+python ./demo.py -d 0 config/wireframe.yaml <path-to-pretrained-pth> <path-to-image>
+```
+Here, `-d 0` is specifying the GPU ID used for evaluation, and you can specify `-d ""` to force CPU inference.
+
+#### Processing the Dataset
+
+```bash
+download the dataset into folder "data", from https://github.com/huangkuns/wireframe 
+cd data
+tar xf wireframe_raw.tar.xz
+rm wireframe_raw.tar.xz
+cd ..
+dataset/wireframe.py data/wireframe_raw data/wireframe
+```
+
+** Note** If you wish to directly download the pre-processed dataset from [LCNN](https://github.com/zhou13/lcnn), please check: https://github.com/zhou13/lcnn
+### Training
+The default batch size assumes your have a graphics card with 12GB video memory, e.g., GTX 1080Ti or RTX 2080Ti. You may reduce the batch size if you have less video memory.
+
+To train the neural network on GPU 0 (specified by `-d 0`) with the default parameters, execute
+```bash
+python ./train.py -d 0 --identifier baseline config/wireframe.yaml
+```
+
+## Testing Pretrained Models
+To generate wireframes on the validation dataset with the pretrained model, execute
+
+```bash
+./process.py config/wireframe.yaml <path-to-checkpoint.pth> data/wireframe logs/pretrained-model/npz/000312000
 ```
