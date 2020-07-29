@@ -1,8 +1,9 @@
 io:
-  logdir: logs/
-  datadir: data/wireframe/
   vote_index: vote_index_128_128_3_1.mat
-  resume_from:
+  logdir: /tudelft.net/staff-bulk/ewi/insy/VisionLab/yanconglin/wireframe/ht-lcnn-master/logs/
+  datadir: /tudelft.net/staff-bulk/ewi/insy/VisionLab/yanconglin/dataset/wireframe/lcnn/
+  outdir: /tudelft.net/staff-bulk/ewi/insy/VisionLab/yanconglin/wireframe/ht-lcnn-master/results/
+  resume_from: 
   num_workers: 4
   tensorboard_port: 0
   validation_interval: 20000
@@ -24,10 +25,10 @@ model:
     lpos: 1
     lneg: 1
 
-  # backbone parameters
+  # backbone parameters, num parameters of a HT-IHT block ~= 0.5 * # of a Hourglass module
   backbone: stacked_hourglass
   depth: 4
-  num_stacks: 2
+  num_stacks: 4
   num_blocks: 1
 
   # sampler parameters
