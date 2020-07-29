@@ -86,8 +86,8 @@ There has been another CUDA implemeatation for Hough Tranform. Please check this
 For the ease of reproducibility, you are suggested to install [miniconda](https://docs.conda.io/en/latest/miniconda.html) (or [anaconda](https://www.anaconda.com/distribution/) if you prefer) before following executing the following commands. 
 
 ```bash
-conda create -y -n ht
-source activate ht
+conda create -y -n lcnn
+source activate lcnn
 conda install -y pytorch cudatoolkit=10.1 -c pytorch
 conda install -y tensorboardx -c conda-forge
 conda install -y pyyaml docopt matplotlib scikit-image opencv
