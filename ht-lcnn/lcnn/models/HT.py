@@ -6,9 +6,7 @@ Yancong Lin, and Silvia Laura Pintea, and Jan C. van Gemert
 
 e-mail: y.lin-1ATtudelftDOTnl
 
-Computer Vision Lab
-
-Delft University of Technology, the Netherlands
+Vision Lab, Delft University of Technology
 
 MIT license
 
@@ -25,7 +23,7 @@ import sys
 import scipy.io as sio
 import matplotlib.pyplot as plt
 
-# ####################################IHT########################################################
+# ####################################HT########################################################
 def hough_transform(rows, cols, theta_res, rho_res):
 
     theta = np.linspace(0, 180.0, int(np.ceil(180.0 / theta_res) + 1.0))
