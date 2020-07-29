@@ -5,14 +5,14 @@ io:
   resume_from:
   num_workers: 4
   tensorboard_port: 0
-  validation_interval: 24000
+  validation_interval: 20000
 
 model:
   image:
       mean: [109.730, 103.832, 98.681]
       stddev: [22.275, 22.124, 23.229]
 
-  batch_size: 6
+  batch_size: 5
   batch_size_eval: 2
 
   # backbone multi-task parameters
