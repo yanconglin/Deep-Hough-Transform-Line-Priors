@@ -28,14 +28,17 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
  
  
  ## Main result: imptroved data and parameter efficiency
-  <img src="ht-lcnn/figs/sap10.png" width="360">   <img src="ht-lcnn/figs/sap10_pr.png" width="360"> 
+  <img src="ht-lcnn/figs/sap10.png" width="240">   <img src="ht-lcnn/figs/sap10_pr.png" width="240"> 
   
-  <img src="ht-lcnn/figs/sap10_2.png" width="360">   <img src="ht-lcnn/figs/sap10_pr2.png" width="360"> 
+  <img src="ht-lcnn/figs/sap10_2.png" width="240">   <img src="ht-lcnn/figs/sap10_pr2.png" width="240"> 
 
 
 ## Code Structure
 
-Our implementation is based on the [LCNN](https://github.com/zhou13/lcnn) implementation [https://arxiv.org/abs/1905.03246]. We made minor changes to fit our HT-IHT module. If you are only interested in the HT-IHT module, please check "ht-lcnn/lcnn/models/HT.py". (Thanks Yichao Zhou for such a nice implemtation!)
+Our implementation is based on the [LCNN](https://github.com/zhou13/lcnn) implementation [https://arxiv.org/abs/1905.03246].  (Thanks Yichao Zhou for such a nice implemtation!)
+
+We made minor changes to fit our HT-IHT module. If you are only interested in the HT-IHT module, please check "ht-lcnn/lcnn/models/HT.py".
+
 Below is a quick overview of the function of each file.
 
 ```bash
@@ -114,7 +117,7 @@ cd ..
 dataset/wireframe.py data/wireframe_raw data/wireframe
 ```
 
-** Recommended** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn).
+** Recommended** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn#downloading-the-processed-dataset).
 
 Make sure `curl` is installed on your system and execute
 ```bash
@@ -139,3 +142,29 @@ To generate wireframes on the validation dataset with the pretrained model, exec
 ```bash
 ./process.py config/wireframe.yaml <path-to-checkpoint.pth> data/wireframe logs/pretrained-model/npz/000312000
 ```
+
+### Evaluation
+
+To evaluate the sAP of all your checkpoints under `logs/`, execute
+```bash
+python eval-sAP.py logs/*/npz/*
+```
+
+To evaluate the mAP<sup>J</sup>, execute
+```bash
+python eval-mAPJ.py logs/*/npz/*
+```
+
+To evaluate Precision-Recall, please check the [MCMLSD](https://www.elderlab.yorku.ca/mcmlsd/) for details. This metric enforces 1:1 correspondence either at pixel or segment level, and penalized both over- and under-segmentation. Therefore, we choose this one for pixel-level evaluation.
+
+
+### Citing End-to-End Wireframe Parsing
+
+If you find L-CNN useful in your research, please consider citing:
+
+@article{lin2020deep,
+  title={Deep Hough-Transform Line Priors},
+  author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
+  booktitle={EECV 2020},
+  year={2020}
+}
