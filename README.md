@@ -10,13 +10,15 @@ Vision Lab, Delft University of Technology, the Netherlands
 
 ## Introduction
 
-Classical work on line segment detection is knowledge-based; it uses carefully designed geometric priors using either image gradients, pixel groupings, or Hough transform variants. Instead, current deep learning methods do away with all prior knowledge and replace priors by training deep networks on large manually annotated datasets. Here, we reduce the dependency on labeled data by building on the classic knowledge-based priors while using deep networks to learn features. We add line priors through a trainable Hough transform block into a deep network. Hough transform provides the prior knowledge about global line parameterizations, while the convolutional layers can learn the local gradient-like line features. On the Wireframe (ShanghaiTech) and York Urban datasets we show that adding prior knowledge improves data efficiency as line priors no longer need to be learned from data. Keywords: Hough transform; global line prior, line segment detection.
+Classical work on line segment detection is knowledge-based; it uses carefully designed geometric priors using either image gradients, pixel groupings, or Hough transform variants. Instead, current deep learning methods do away with all prior knowledge and replace priors by training deep networks on large manually annotated datasets. Here, we reduce the dependency on labeled data by building on the classic knowledge-based priors while using deep networks to learn features. We add line priors through a trainable Hough transform block into a deep network. Hough transform provides the prior knowledge about global line parameterizations, while the convolutional layers can learn the local gradient-like line features. On the Wireframe and York Urban datasets we show that adding prior knowledge improves data efficiency as line priors no longer need to be learned from data.
 
 ## Main Features: added Hough line priors
 
  <img src="ht-lcnn/figs/exp_gt.png" width="160">   <img src="ht-lcnn/figs/exp_pred.png" width="160">   <img src="ht-lcnn/figs/exp_input.png" width="160">   <img src="ht-lcnn/figs/exp_iht.png" width="160"> 
   
- From left to right:  Ground Truth, Predictions, Input features with noise, and HTIHT features. The added line prior is able to localize line cadidates from the noisy input.
+ From left to right:  Ground Truth, Predictions, Input features with noise, and HTIHT features. 
+ 
+ The added line prior is able to localize line cadidates from the noisy input.
  
 ## Main Contribution: the HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="600"> 
@@ -72,7 +74,7 @@ train.py                        # script for training the neural network
 process.py                      # script for processing a dataset from a checkpoint
 ```
 
-## Remarks and Tips on the Hough Transform vote_index matrix (to do).
+## Remarks on the Hough Transform (to do).
 Currently, my HT-IHT module runs both on CPUs and GPUs, but consumes more memory (depends on the image size). I will release the CUDA version later, which greatly reduces the memory consumption. 
 
 There has been another CUDA implemeatation for the Hough Tranform, which seems to be more computationally efficient.  Please check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
