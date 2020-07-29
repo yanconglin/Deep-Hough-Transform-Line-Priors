@@ -77,7 +77,7 @@ process.py                      # script for processing a dataset from a checkpo
 ## Remarks on the Hough Transform (to do).
 Currently, my HT-IHT module runs both on CPUs and GPUs, but consumes more memory (depends on the image size). I will release the CUDA version later, which greatly reduces the memory consumption. 
 
-There has been another CUDA implemeatation for the Hough Tranform, which seems to be more computationally efficient.  Please check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
+There has been another CUDA implemeatation for Hough Tranform. Please check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
 
 ## Reproducing Results
 
