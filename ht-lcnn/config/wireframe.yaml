@@ -1,8 +1,8 @@
 io:
   vote_index: vote_index_128_128_3_1.mat
-  logdir: /tudelft.net/staff-bulk/ewi/insy/VisionLab/yanconglin/wireframe/ht-lcnn-master/logs/
-  datadir: /tudelft.net/staff-bulk/ewi/insy/VisionLab/yanconglin/dataset/wireframe/lcnn/
-  outdir: /tudelft.net/staff-bulk/ewi/insy/VisionLab/yanconglin/wireframe/ht-lcnn-master/results/
+  logdir: logs/
+  datadir: data/
+  outdir: results/
   resume_from: 
   num_workers: 4
   tensorboard_port: 0
