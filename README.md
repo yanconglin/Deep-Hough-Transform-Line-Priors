@@ -2,7 +2,7 @@
 # Deep-Hough-Transform-Line-Priors 
 Official implementation for [Deep-Hough-Transform-Line-Priors](https://arxiv.org/abs/2007.09493) (ECCV 2020) 
 
-Yancong Lin, and Silvia Laura Pintea, and Jan C. van Gemert
+Yancong Lin, and [Silvia Laura Pintea](https://silvialaurapintea.github.io/), and [Jan C. van Gemert](http://jvgemert.github.io/)
 
 E-mail: y.lin-1ATtudelftDOTnl
 
@@ -16,7 +16,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
  <img src="ht-lcnn/figs/exp_gt.png" width="180">   <img src="ht-lcnn/figs/exp_input.png" width="180">   <img src="ht-lcnn/figs/exp_iht.png" width="180">   <img src="ht-lcnn/figs/exp_pred.png" width="180"> 
  
- From left to right:  Ground Truth, Input features with noise,lHTIHT features and Predictions.
+ From left to right:  Ground Truth, Input features with noise, lHTIHT features and Predictions.
  
 ## Main Contribution: the HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="480"> 
@@ -67,7 +67,6 @@ lcnn/                           # lcnn module so you can "import lcnn" in other 
     utils.py                    # misc functions
 demo.py                         # script for detecting wireframes for an image
 eval-sAP.py                     # script for sAP evaluation
-eval-APH.py                     # script for APH evaluation
 eval-mAPJ.py                    # script for mAPJ evaluation
 train.py                        # script for training the neural network
 process.py                      # script for processing a dataset from a checkpoint
@@ -110,7 +109,7 @@ Here, `-d 0` is specifying the GPU ID used for evaluation, and you can specify `
 download and unzip the dataset into the folder "data", from [Learning to Parse Wireframes in Images of Man-Made Environments](https://github.com/huangkuns/wireframe)
 
 ```bash
-dataset/wireframe.py data/wireframe_raw data/wireframe
+wireframe.py data/wireframe_raw data/wireframe
 ```
 
 ** Recommended** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn#downloading-the-processed-dataset). Details are as follows:
