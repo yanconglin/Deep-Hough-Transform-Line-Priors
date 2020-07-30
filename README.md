@@ -107,7 +107,7 @@ Here, `-d 0` is specifying the GPU ID used for evaluation, and you can specify `
 
 ### Processing the Dataset
 
-download and unzip the dataset into the folder "data", from [Learning to Parse Wireframes in Images of Man-Made Environments](https://github.com/huangkuns/wireframe)
+Download and unzip the dataset into the folder "ht-lcnn/data", from [Learning to Parse Wireframes in Images of Man-Made Environments](https://github.com/huangkuns/wireframe)
 
 ```bash
 wireframe.py data/wireframe_raw data/wireframe
