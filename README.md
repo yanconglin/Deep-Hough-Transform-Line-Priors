@@ -53,7 +53,6 @@ dataset/                        # all scripts related to data generation
     wireframe.py                # script for pre-processing the ShanghaiTech dataset to npz
 misc/                           # misc scripts that are not important
     draw-wireframe.py           # script for generating figure grids
-    lsd.py                      # script for generating npz files for LSD
     plot-sAP.py                 # script for plotting sAP10 for all algorithms
 lcnn/                           # lcnn module so you can "import lcnn" in other scripts
     models/                     # neural network structure
