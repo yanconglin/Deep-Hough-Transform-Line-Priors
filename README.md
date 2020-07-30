@@ -18,7 +18,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
   
  From left to right:  Ground Truth, Predictions, Input features with noise, and HTIHT features. 
  
- The added line prior is able to localize line cadidates from the noisy input.
+ The added line priors are able to localize line cadidates from the noisy input.
  
 ## Main Contribution: the HT-IHT Module
  <img src="ht-lcnn/figs/htiht.png" width="600"> 
