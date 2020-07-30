@@ -36,7 +36,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
 Our implementation is largely based on [LCNN](https://github.com/zhou13/lcnn).  (Thanks Yichao Zhou for such a nice implementation!)
 
-We made minor changes to fit our HT-IHT module. If you are only interested in the HT-IHT module, please check "ht-lcnn/lcnn/models/HT.py".
+We made minor changes to fit our HT-IHT module. If you are only interested in the HT-IHT module, please check ["HT.py"](https://github.com/yanconglin/Deep-Hough-Transform-Line-Priors/blob/master/ht-lcnn/lcnn/models/HT.py).
 
 Below is a quick overview of the function of each file.
 
