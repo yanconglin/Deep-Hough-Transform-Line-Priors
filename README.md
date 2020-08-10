@@ -16,7 +16,7 @@ Classical work on line segment detection is knowledge-based; it uses carefully d
 
  <img src="ht-lcnn/figs/exp_gt.png" width="160">   <img src="ht-lcnn/figs/exp_pred.png" width="160">   <img src="ht-lcnn/figs/exp_input.png" width="160">   <img src="ht-lcnn/figs/exp_iht.png" width="160"> 
   
- From left to right:  Ground Truth, Predictions, Input features with noise, and HTIHT features. 
+ From left to right:  Ground Truth, Predictions, Input features with noise, and HT-IHT features. 
  
  The added line priors are able to localize line cadidates from the noisy input.
  
