@@ -151,7 +151,7 @@ To evaluate the mAP<sup>J</sup>, execute
 python eval-mAPJ.py logs/*/npz/*
 ```
 
-To evaluate Precision-Recall, please check [MCMLSD: A Dynamic Programming Approach to Line Segment Detection](https://www.elderlab.yorku.ca/mcmlsd/) for details. This metric enforces 1:1 correspondence either at pixel or segment level, and penalizes both over- and under-segmentation. Therefore, we chose this one for pixel-level evaluation. Be aware that the evaluation method introduced in [Learning to Parse Wireframes in Images of Man-Made Environments](https://github.com/huangkuns/wireframe) is deeply flawed, because it does not penalize over-(under-)segmentation.
+To evaluate Precision-Recall, please check [MCMLSD: A Dynamic Programming Approach to Line Segment Detection](https://www.elderlab.yorku.ca/mcmlsd/) for details. This metric enforces 1:1 correspondence either at pixel or segment level, and penalizes both over- and under-segmentation. Therefore, we chose this one for pixel-level evaluation. Be aware that the evaluation propsoed by [Learning to Parse Wireframes in Images of Man-Made Environments](https://github.com/huangkuns/wireframe) is deeply flawed, because it does not penalize over-/under-segmentation.
 
 If you have trouble reproducing some results, [this discussion](https://github.com/zhou13/lcnn/issues/24) may help.
 
