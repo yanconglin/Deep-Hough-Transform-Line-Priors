@@ -113,7 +113,7 @@ Download and unzip the dataset into the folder "ht-lcnn/data", from [Learning to
 wireframe.py data/wireframe_raw data/wireframe
 ```
 
-** Recommended** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn#downloading-the-processed-dataset). Details are as follows:
+** Recommend** You can also download the pre-processed dataset directly from [LCNN](https://github.com/zhou13/lcnn#downloading-the-processed-dataset). Details are as follows:
 
 Make sure `curl` is installed on your system and execute
 ```bash
