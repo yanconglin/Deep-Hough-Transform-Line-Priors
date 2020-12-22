@@ -29,8 +29,11 @@ def hough_transform(rows, cols, theta_res, rho_res):
     theta = np.linspace(0, 180.0, int(np.ceil(180.0 / theta_res) + 1.0))
     theta = theta[0:len(theta) - 1]
 
-    ###  Actually,the offset does not have to this large.
+    ###  Actually,the offset does not have to this large, because the origin is located at the image center.
     D = np.sqrt((rows - 1) ** 2 + (cols - 1) ** 2)
+    ###  replace the line above to reduce the memory usage (significantly).
+    # D = np.sqrt((rows/2) ** 2 + (cols/2) ** 2)
+    
     q = np.ceil(D / rho_res)
     nrho = 2 * q + 1
     rho = np.linspace(-q * rho_res, q * rho_res, int(nrho))
