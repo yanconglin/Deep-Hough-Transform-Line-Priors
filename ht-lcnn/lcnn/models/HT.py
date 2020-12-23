@@ -93,6 +93,7 @@ class HT(nn.Module):
         HT_map = image @ self.vote_index
         ### normalization ###
         # HT_map = HT_map/self.total
+        ### normalized by max(rows, cols)
         HT_map = HT_map/(self.c)
         HT_map = HT_map.view(batch, channel, -1).view(batch, channel, self.h, self.w)
         return HT_map
