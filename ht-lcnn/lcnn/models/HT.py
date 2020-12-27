@@ -84,6 +84,7 @@ class HT(nn.Module):
     def __init__(self, vote_index):
         super(HT, self).__init__()
         self.r, self.c, self.h, self.w = vote_index.size()
+        self.norm = max(self.r, self.c)
         self.vote_index = vote_index.view(self.r * self.c, self.h *self.w)
         self.total = vote_index.sum(0).max()
     def forward(self, image):
@@ -94,7 +95,7 @@ class HT(nn.Module):
         ### normalization ###
         # HT_map = HT_map/self.total
         ### normalized by max(rows, cols)
-        HT_map = HT_map/(self.c)
+        HT_map = HT_map/(self.norm)
         HT_map = HT_map.view(batch, channel, -1).view(batch, channel, self.h, self.w)
         return HT_map
 
