@@ -163,7 +163,7 @@ If you find Deep Hough-Transform Line Priors useful in your research, please con
 @article{lin2020deep,
   title={Deep Hough-Transform Line Priors},
   author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
-  booktitle={EECV 2020},
+  booktitle={European Conference on Computer Vision},
   year={2020}
 }
 ```
