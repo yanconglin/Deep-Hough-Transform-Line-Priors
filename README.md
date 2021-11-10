@@ -78,8 +78,7 @@ Currently, my HT-IHT module runs both on CPUs and GPUs, but consumes more memory
 
 There has been another CUDA implementation for Hough Tranform. You may check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
 
-If you wish to understand the intuition behind the initialization, check this thesis (Chapter 2) "Magnusson, M.: Linogram and Other Direct Fourier Methods for Tomographic
-Reconstruction. Linköping studies in science and technology: Dissertations, Department of Mechanical Engineering, Linköping University (1993)".
+If you wish to understand the intuition behind the initialization, check this dissertations (Chapter 2) "Magnusson, M.: Linogram and Other Direct Fourier Methods for Tomographic Reconstruction. Linköping University (1993)".
 
 ## Reproducing Results
 
