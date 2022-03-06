@@ -74,9 +74,11 @@ process.py                      # script for processing a dataset from a checkpo
 ```
 
 ## Remarks on the Hough Transform (to do).
-Currently, my HT-IHT module runs both on CPUs and GPUs, but consumes more memory (depends on the image size). I will release the CUDA version later, which greatly reduces the memory consumption. 
+Currently, the HT-IHT module in this repo runs both on CPUs and GPUs, but consumes more memory (depends on the image size). 
 
-There has been another CUDA implementation for Hough Tranform. You may check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
+Update: I have released a CUDA implementation of both HT and IHT modules. Please check [Geometric priors make dataset variations vanish](https://github.com/yanconglin/VanishingPoint_HoughTransform_GaussianSphere) for details. 
+
+There is also another CUDA implementation for Hough Tranform. You may check this repo [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
 
 If you wish to understand the intuition behind the initialization, check this excellent dissertation (Chapter 2) "Magnusson, M.: Linogram and Other Direct Fourier Methods for Tomographic Reconstruction. Linköping University (1993)".
 
