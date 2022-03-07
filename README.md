@@ -164,7 +164,7 @@ If you have trouble reproducing some results, [this discussion](https://github.c
 
 If you find Deep Hough-Transform Line Priors useful in your research, please consider citing:
 ```bash
-@article{lin2020deep,
+@article{lin2020ht,
   title={Deep Hough-Transform Line Priors},
   author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
   booktitle={European Conference on Computer Vision},
