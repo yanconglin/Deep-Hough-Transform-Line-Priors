@@ -80,7 +80,7 @@ Update: I have released a CUDA implementation of both HT and IHT modules in my r
 
 There is also another CUDA implementation for Hough Transform. Check [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
 
-If you wish to understand the intuition behind the initialization, check this excellent dissertation (Chapter 2) <br/> "Magnusson, M.: Linogram and Other Direct Fourier Methods for Tomographic Reconstruction. Linköping University (1993)".
+If you would like to understand the intuition behind the initialization, check this excellent dissertation (Chapter 2) <br/> "Magnusson, M.: Linogram and Other Direct Fourier Methods for Tomographic Reconstruction. Linköping University (1993)".
 
 ## Reproducing Results
 
