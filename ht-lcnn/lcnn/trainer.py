@@ -40,10 +40,10 @@ class Trainer(object):
         ### unable to run tensorboard on the cluster
         # self.run_tensorboard()
         # time.sleep(1)
-        # self.board_out = osp.join(self.out, "tensorboard")
-        # if not osp.exists(self.board_out):
-        #     os.makedirs(self.board_out)
-        # self.writer = SummaryWriter(self.board_out)
+        self.board_out = osp.join(self.out, "tensorboard")
+        if not osp.exists(self.board_out):
+            os.makedirs(self.board_out)
+        self.writer = SummaryWriter(self.board_out)
 
 
         self.epoch = 0
