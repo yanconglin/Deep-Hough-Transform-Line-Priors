@@ -7,7 +7,8 @@ Usage:
 Arguments:
    <yaml-config>                 Path to the yaml hyper-parameter file
    <checkpoint>                  Path to the checkpoint
-
+   <data>                        Path to data
+   
 Options:
    -h --help                     Show this screen.
    -d --devices <devices>        Comma seperated GPU devices [default: 0]
