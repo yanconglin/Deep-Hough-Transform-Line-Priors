@@ -140,7 +140,7 @@ python ./train.py -d 0 --identifier baseline config/wireframe.yaml
 To generate wireframes on the validation dataset with the pretrained model, execute
 
 ```bash
-./process.py config/wireframe.yaml <path-to-checkpoint.pth> data/wireframe logs/pretrained-model/npz/000312000
+./process.py config/wireframe.yaml <path-to-checkpoint.pth>
 ```
 
 ### Evaluation
