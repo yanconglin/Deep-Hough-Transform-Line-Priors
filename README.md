@@ -76,11 +76,13 @@ process.py                      # script for processing a dataset from a checkpo
 ## Remarks on the Hough Transform (to do).
 The HT-IHT module in this repo runs both on CPUs and GPUs, but consumes more memory (depends on the image size). 
 
-Update: I have released a CUDA implementation of both HT and IHT modules in my recent work on vanishing point detection. Please check [ Deep vanishing point detection:  Geometric priors make dataset variations vanish](https://github.com/yanconglin/VanishingPoint_HoughTransform_GaussianSphere) for details. 
+Update 1: I have released a CUDA implementation of both HT and IHT modules in my recent work on vanishing point detection. Please check [ Deep vanishing point detection:  Geometric priors make dataset variations vanish](https://github.com/yanconglin/VanishingPoint_HoughTransform_GaussianSphere) for details. 
 
 There is also another CUDA implementation for Hough Transform. Check [Deep Hough Transform for Semantic Line Detection](https://github.com/Hanqer/deep-hough-transform) for details.
 
 If you would like to understand the intuition behind the initialization, check this excellent dissertation (Chapter 2) <br/> "Magnusson, M.: Linogram and Other Direct Fourier Methods for Tomographic Reconstruction. Linköping University (1993)".
+
+Update 2: There is also an work on using HT/IHT modules for traffic lane detection. Please check [  Semi-Supervised Lane Detection with Deep Hough Transform ](https://github.com/yanconglin/Semi-Supervised-Lane-Detection-with-Deep-Hough-Transform) for details. 
 
 ## Reproducing Results
 
