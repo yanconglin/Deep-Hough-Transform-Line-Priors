@@ -4,8 +4,6 @@ Official implementation: [Deep-Hough-Transform-Line-Priors](https://arxiv.org/ab
 
 [Yancong Lin](https://yanconglin.github.io/), and [Silvia Laura Pintea](https://silvialaurapintea.github.io/), and [Jan C. van Gemert](http://jvgemert.github.io/)
 
-E-mail: y.lin-1ATtudelftDOTnl
-
 Vision Lab, Delft University of Technology, the Netherlands
 
 ## Introduction
@@ -88,7 +86,7 @@ Update 2: There is also an work on using HT/IHT modules for traffic lane detecti
 
 ### Installation
 
-For the ease of reproducibility, you are suggested to install [miniconda](https://docs.conda.io/en/latest/miniconda.html) (or [anaconda](https://www.anaconda.com/distribution/) if you prefer) before following executing the following commands. 
+For easy reproducibility, you are suggested to install [miniconda](https://docs.conda.io/en/latest/miniconda.html) (or [anaconda](https://www.anaconda.com/distribution/) if you prefer) before following executing the following commands. 
 
 ```bash
 conda create -y -n lcnn
