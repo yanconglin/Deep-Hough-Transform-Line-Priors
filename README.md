@@ -71,7 +71,7 @@ train.py                        # script for training the neural network
 process.py                      # script for processing a dataset from a checkpoint
 ```
 
-## Remarks on the Hough Transform.
+## Remarks on the Hough Transform
 The HT-IHT module in this repo runs both on CPUs and GPUs, but consumes more memory (depends on the image size). 
 
 Update 1: I have released a CUDA implementation of both HT and IHT modules in my recent work on vanishing point detection. Please check [ Deep vanishing point detection:  Geometric priors make dataset variations vanish](https://github.com/yanconglin/VanishingPoint_HoughTransform_GaussianSphere) for details. 
