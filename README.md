@@ -98,7 +98,7 @@ conda install -y pyyaml docopt matplotlib scikit-image opencv
 
 ### Pre-trained Models
 
-You can download our reference pre-trained models (on the official training set of the Wireframe dataset) from [SURFdrive](https://surfdrive.surf.nl/files/index.php/s/hpi721UAIr43avr). Use `demo.py`, `process.py`, and
+You can download our reference pre-trained models (on the official training set of the Wireframe dataset) from [GoogleDrive](https://drive.google.com/drive/folders/1lcaM-Umyl4GNq9-7dX3I8j68Mq2njGa0?usp=sharing). Use `demo.py`, `process.py`, and
 `eval-*.py` to evaluate the pre-trained models.
 
 ### Detect Wireframes for Your Own Images
